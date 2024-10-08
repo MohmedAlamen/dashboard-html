@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        /* إعدادات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* حاوية صفحة التسجيل */
+        .signup-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            max-width: 100%;
+        }
+
+        .signup-container h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        /* حقول النموذج */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #2980b9;
+        }
+
+        /* زر تسجيل جديد */
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .form-group button:hover {
+            background-color: #3498db;
+        }
+
+        /* رابط تسجيل الدخول */
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .login-link a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* استجابة التصميم */
+        @media (max-width: 768px) {
+            .signup-container {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="signup-container">
+        <h1>تسجيل حساب جديد</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="username">اسم المستخدم</label>
+                <input type="text" id="username" placeholder="أدخل اسم المستخدم">
+            </div>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" placeholder="أدخل البريد الإلكتروني">
+            </div>
+            <div class="form-group">
+                <label for="password">كلمة المرور</label>
+                <input type="password" id="password" placeholder="أدخل كلمة المرور">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">تأكيد كلمة المرور</label>
+                <input type="password" id="confirm-password" placeholder="أدخل تأكيد كلمة المرور">
+            </div>
+            <div class="form-group">
+                <button type="submit">تسجيل جديد</button>
+            </div>
+        </form>
+        <div class="login-link">
+            <p>هل لديك حساب؟ <a href="/singIn.html">تسجيل الدخول</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

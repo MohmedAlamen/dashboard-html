@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* إعدادات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* حاوية صفحة تسجيل الدخول */
+        .login-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            max-width: 100%;
+        }
+
+        .login-container h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        /* حقول النموذج */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #2980b9;
+        }
+
+        /* زر تسجيل الدخول */
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .form-group button:hover {
+            background-color: #3498db;
+        }
+
+        /* رابط نسيان كلمة المرور */
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .forgot-password a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        /* استجابة التصميم */
+        @media (max-width: 768px) {
+            .login-container {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>تسجيل الدخول</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني أو اسم المستخدم</label>
+                <input type="text" id="email" placeholder="أدخل البريد الإلكتروني أو اسم المستخدم">
+            </div>
+            <div class="form-group">
+                <label for="password">كلمة المرور</label>
+                <input type="password" id="password" placeholder="أدخل كلمة المرور">
+            </div>
+            <div class="form-group">
+                <button type="submit">تسجيل الدخول</button>
+            </div>
+            <div class="forgot-password">
+                <a href="#">نسيت كلمة المرور؟</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
